@@ -539,3 +539,23 @@ nav{
     padding-left: 23px;
     background: #0a0a0a;
 }
+
+.profile-container{
+    padding: 20px 15%;
+    color: #626262;
+}
+
+.cover-img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+
+.profile-details{
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
