@@ -493,19 +493,19 @@ nav{
     margin: 15px 0;
 }
 
-.setting-links{
+.settings-links{
     display: flex;
     align-items: center;
     margin: 15px 0;
 }
 
-.setting-links .settings-icon{
+.settings-links .settings-icon{
     width: 38px;
     margin-right: 10px;
     border-radius: 50%;
 }
 
-.setting-links a{
+.settings-links a{
     display: flex;
     flex: 1;
     align-items: center;
