@@ -1,11 +1,12 @@
-
+// Likho Kapesi
+//  Classroom 2
 
 function login() {
   username = document.querySelector('#username').value
   password = document.querySelector('#password').value
   console.log(username);
   console.log(password);
-    fetch("https://shrouded-temple-45259.herokuapp.com/auth", {
+    fetch("https://dynamicoakfx.herokuapp.com/auth", {
         method: "POST",
         body: JSON.stringify({
           username: `${username}`,
@@ -18,7 +19,7 @@ function login() {
     .then((res) => res.json())
     .then((data) => {
       if (data["access_token"]) {
-        fetch("https://shrouded-temple-45259.herokuapp.com/login/", {
+        fetch("https://dynamicoakfx.herokuapp.com/login/", {
           method: "POST",
           body: JSON.stringify({
             username: `${username}`,
@@ -53,7 +54,7 @@ function subscribe() {
   let email = document.querySelector('.email').value
   let username = document.querySelector('.username').value
   let password = document.querySelector('.password').value
-  fetch("https://shrouded-temple-45259.herokuapp.com/registration/", {
+  fetch("https://dynamicoakfx.herokuapp.com/registration/", {
     method: "POST",
     body: JSON.stringify({
       name: `${name}`,
@@ -81,3 +82,15 @@ document.querySelector('.subscribe').addEventListener('submit', (e) => {
   e.preventDefault()
   subscribe()
 })
+
+function loginToggle() {
+  let login = document.querySelector('#login')
+  let regitser = document.querySelector('#subscribe')
+  login.classList.toggle("active");
+  regitser.classList.toggle("active");
+  if (regitser.classList.contains("active")) {
+    login.classList.add("hide");
+  } else {
+    regitser.classList.add("hide");
+  }
+}
