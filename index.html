@@ -21,12 +21,12 @@
               <div class="loginform">
                 <table>
                   <tr>
-                    <td class="logintext">Email or Phone</td>
-                    <td class="logintext"><span class="loginrowgap">Password</span></td>
+                    <td id="username">Username</td>
+                    <td id="password"><span class="loginrowgap">Password</span></td>
                   </tr>
                     <td><input class="logintext loginfield" type="text"></td>
                     <td><input class="logintext loginrowgap loginfield" type="password"></td>
-                    <td><input class="loginrowgap" id="loginbutton" type="submit" value="Log In"></td>
+                    <td><input class="loginrowgap" id="loginbutton" type="submit" value="Log In" ></td>
                   </tr>
                   <tr>
                     <td></td>
@@ -58,13 +58,14 @@
                 <!-- signup design -->
                   <div class="signupform">
                     <div class="inputname">
-                        <input type="text" name="firstname" placeholder="First name" class="namebox namebox1 signuptextbox" required>
-                        <input type="text" name="surname" placeholder="Surname" class="namebox namebox2 signuptextbox">
+                        <input type="text" name="name" placeholder="First name" class="namebox namebox1 signuptextbox" required>
+                        <input type="text" name="username" placeholder="Surname" class="namebox namebox2 signuptextbox">
+                        <input type="text" name="username" placeholder="Username" class="namebox namebox3 signuptextbox">
                     </div>
 
                     <!-- for mobile view -->
-                    <input type="text" class="mobilepw signuptextbox" name="mobile/email" placeholder="Mobile number or email address" required><br>
-                    <input type="password" class="mobilepw signuptextbox" placeholder="New password" required><br>
+                    <input type="text" class="mobilepw signuptextbox" name="mobile/email" placeholder="Email address" required><br>
+                    <input type="password" class="mobilepw2 signuptextbox" placeholder="New password" required><br>
                     <!-- birthday -->
                     <p class="createp" id="birthday">Birthday</p>
 
@@ -132,7 +133,7 @@
                    </div>
                    <!-- signup button -->
                     <div class="clearfix">
-                        <button type="button" id="signupbutton">Sign Up</button>
+                        <button type="button" id="signupbutton" onclick=" regitser()">Sign Up</button>
                     </div>
 
                     <!-- Create page -->
@@ -196,9 +197,12 @@
             <a href="#" class="extralinks">Help</a>
           </div>
           <div id="copyrightdiv">
-              <span id="copyright"><a href="https://www.facebook.com" target="_blank" id="copyrightfblink">Life Choices Academy Eyebook</a> © 2021</span>
+              <span id="copyright"><a href="https://likhokapesi.netlify.app" target="_blank" id="copyrightfblink">Likho Kapesi Eyebook</a> © 2021</span>
           </div>
         </div>
       </footer>
+
+      <script src="/js/login.js"></script>
+
 </body>
 </html>
