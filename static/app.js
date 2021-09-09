@@ -1,3 +1,6 @@
+//  Likho Kapesi    
+//  Classroom 2
+
 document.querySelector('#dark-mode-toggle').onclick = () => {
     document.documentElement.classList.toggle('dark')
 }

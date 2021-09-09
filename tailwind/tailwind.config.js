@@ -1,3 +1,6 @@
+//  Likho Kapesi  
+//  Classroom 2
+
 module.exports = {
   purge: [
     '../*.html'
