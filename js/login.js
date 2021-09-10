@@ -1,12 +1,12 @@
 // Likho Kapesi
-//  Classroom 2
+// Classroom 2
 
 function login() {
   username = document.querySelector('#username').value
   password = document.querySelector('#password').value
   console.log(username);
   console.log(password);
-    fetch("https://dynamicoakfx.herokuapp.com/auth", {
+    fetch("https://shrouded-temple-45259.herokuapp.com/auth", {
         method: "POST",
         body: JSON.stringify({
           username: `${username}`,
@@ -38,22 +38,23 @@ function login() {
         storage.setItem("jwt-token", data["access_token"]);
         storage.setItem("username", username);
         storage.setItem("password", password);
-        window.location.href = "/home.html";
+        window.alert("You have successfully logged in.");
+        window.location.href = "/index.html";
       }
     });
 }
 
-document.querySelector('.loginform').addEventListener('submit', (e) => {
+document.querySelector('.login_form').addEventListener('submit', (e) => {
   e.preventDefault()
   login()
 })
 
-function regitser() {
-  let name = document.querySelector('.namebox1').value
-  let surname = document.querySelector('.namebox2').value
-  let email = document.querySelector('.mobilepw').value
-  let username = document.querySelector('.namebox3').value
-  let password = document.querySelector('.mobilepw2').value
+function register() {
+  let name = document.querySelector('.name').value
+  let surname = document.querySelector('.surname').value
+  let email = document.querySelector('.email').value
+  let username = document.querySelector('.username').value
+  let password = document.querySelector('.password').value
   fetch("https://dynamicoakfx.herokuapp.com/registration/", {
     method: "POST",
     body: JSON.stringify({
@@ -78,19 +79,8 @@ function regitser() {
   });
 }
 
-document.querySelector('.signupform').addEventListener('submit', (e) => {
+document.querySelector('.signup_form').addEventListener('submit', (e) => {
   e.preventDefault()
-  regitser()
+  register()
 })
 
-// function loginToggle() {
-  // let login = document.querySelector('#login')
-  // let regitser = document.querySelector('#subscribe')
-  // login.classList.toggle("active");
-  // regitser.classList.toggle("active");
-  // if (regitser.classList.contains("active")) {
-    // login.classList.add("hide");
-  // } else {
-    // regitser.classList.add("hide");
-  // }
-// }
