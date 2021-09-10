@@ -6,7 +6,7 @@ function login() {
   password = document.querySelector('#password').value
   console.log(username);
   console.log(password);
-    fetch("https://shrouded-temple-45259.herokuapp.com/auth", {
+    fetch("https://dynamicoakfx.herokuapp.com/auth", {
         method: "POST",
         body: JSON.stringify({
           username: `${username}`,
