@@ -4,12 +4,18 @@
   <title>Eyebook - Login or Sign Up</title>
   <link rel="shortcut icon" href="/images/logo.png" type="image/png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+
 </head>
 <body>
   <nav class="navbar">
     <h3>Eyebook</h3>
+
     <form class="login_form" onsubmit="event.preventDefault(), login()">
+
+    <form class="login_form" action="https://dynamicoakfx.herokuapp.com/login/">
+
       <div class="username">
         <div class="font">Username</div>
         <input id="username" type="text" name="">
@@ -18,13 +24,19 @@
         <div class="font">Password</div>
         <input id="password" type="password" name="">
       </div>
+
       <button type="submit" class="login_btn">Login</button>
+
+      <button type="submit" class="login_btn" onclick="event.preventDefault(), login()">Login</button>
     </form>
   </nav>
 
   <section>
     <div class="logo_body">
+
       <img class="logobdy" src="/images/fbbdy.png">
+
+      <img class="logobdy" src="fbbdy.png">
       <p class="like_font font1">Thanks for stopping by!</p>
       <p class="like_font">We hope to see you again soon.</p>
     </div>
@@ -32,7 +44,10 @@
   <div class="signup_body">
     <p class="acc_crt">Create an account</p>
     <p class="free_hint">It's free and always will be.</p>
+
     <form class="signup_form" onsubmit="event.preventDefault(), register()">
+    <form class="signup_form" action="https://dynamicoakfx.herokuapp.com/registration/">
+
       <div class="register">
         <input class="name" type="text" name="" placeholder="First name">
         <input class="surname" type="text" name="" placeholder="Last name">
@@ -42,7 +57,11 @@
 
       </div>
       
+
       <button type="submit" class="signup">Sign Up</button>
+
+      <button type="submit" class="signup" onclick="event.preventDefault(), register()">Sign Up</button>
+
       
     </form>
   </div>
@@ -72,7 +91,7 @@
             <a href="#" class="extralinks">Sign Up</a>
             <a href="#" class="extralinks">Log In</a>
             <a href="#" class="extralinks">Messenger</a>
-            <a href="#" class="extralinks">Facebook Lite</a>
+            <a href="#" class="extralinks">Eyebook Lite</a>
             <a href="#" class="extralinks">Find Friends</a>
             <a href="#" class="extralinks">People</a>
             <a href="#" class="extralinks">Profiles</a>
@@ -105,8 +124,7 @@
         </div>
       </footer>
 
-  <script src="/login.js"></script>
-
+  <script src="/js/login.js"></script>
 
 </body>
 </html>
