@@ -1,0 +1,286 @@
+/*
+  If you have any queries about this form you can comment::
+  Please Subscribe our channel for more related videos::
+  Thank you for watching video :)
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(#48649F, #3B5998, #3B5998);
+  border-bottom: 1px solid #253a69;
+}
+
+.navbar h3{
+  color: white;
+  font-family: sans-serif;
+  font-size: 46px;
+  padding-left: 200px;
+  padding-top: 15px;
+}
+
+.logo{
+  position: absolute;
+  height: 63px;
+  width: 190px;
+  left: 13%;
+  padding-top: 15px;
+}
+.login_form{
+  display: flex;
+  position: absolute;
+  font-family: verdana;
+  left: 58%;
+  top: 15px;
+}
+.login_form .username,
+.login_form .password{
+  padding-left: 10px;
+}
+.login_form .username .font,
+.login_form .password .font{
+  font-size: 13px;
+  padding-bottom: 4px;
+  color: white;
+}
+.login_form .username input,
+.login_form .password input{
+  height: 23px;
+  width: 150px;
+  padding-left: 5px;
+  border: 1px solid black;
+  outline: none;
+}
+.login_form button{
+  height: 24px;
+  width: 50px;
+  font-weight: 600;
+  margin-left: 15px;
+  margin-top: 20px;
+  border-radius: 2px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  background: #2d5bba;
+  border: 1px solid #224285;
+}
+.login_form button:hover{
+  background: #3B5998;
+}
+
+
+section{
+  height: 614px;
+  width: 100%;
+  top: 80px;
+  background: linear-gradient(#FDFDFE, #EFF1F6, #E3E6F0, #E1E5F0, #D6DBEA);
+  font-family: verdana;
+}
+.logo_body{
+  position: absolute;
+  left: 15%;
+  top: 20%;
+}
+.logo_body .like_font{
+  font-family: arial;
+  font-size: 25px;
+  margin-left: -30px;
+}
+.logo_body .font1{
+  color: #083987;
+  margin-left: 20px;   
+  margin-bottom: 5px;
+}
+.signup_body{
+  font-family: arial;
+  position: absolute;
+  left: 57%;  
+}
+.signup_body .acc_crt{
+  font-size: 40px;
+  margin: 25px 0;
+}
+.signup_body .free_hint{
+  margin: -20px 5px;
+  font-size: 18px;
+}
+.signup_body .signup_form input{
+  margin-top: 50px;
+  height: 38px;
+  width: 190px;
+  padding-left: 10px;
+  font-size: 18px;
+  border: 1px solid silver;
+  border-radius: 4px;
+}
+.signup_body .signup_form .surname{
+  margin-left: 15px;
+}
+.signup_body .signup_form .email,
+.signup_body .signup_form .password,
+.signup_body .signup_form .username{
+  margin-top: 20px;
+  width: 410px;
+}
+.signup_body .signup_form .birthday{
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: grey;
+}
+.signup_body .signup_form .birth_date{
+  margin-top: 5px;
+}
+.signup_body .signup_form .month,
+.signup_body .signup_form .day,
+.signup_body .signup_form .year{
+  height: 28px;
+}
+.signup_body .signup_form .day,
+.signup_body .signup_form .year{
+  margin-left: -5px;
+}
+.signup_body .signup_form .brth_hint{
+  font-size: 11px;
+  padding-left: 170px;
+  margin-top: -28px;
+  width: 150px;
+}
+.signup_body .signup_form a{
+  text-decoration: none;
+}
+.signup_body .signup_form a:hover{
+  text-decoration: underline;
+}
+.signup_body .signup_form input[type="radio"]{
+  height: 15px;
+  margin-left: -50px;
+  margin-top: 30px;
+}
+.signup_body .signup_form input[value="female"]{
+  margin-left: -100px;
+}
+.signup_body .signup_form .font{
+  margin-left: 57px;
+  margin-top: -17px;
+}
+.signup_body .signup_form .font2{
+  margin-left: 150px;
+}
+.signup_body .signup_form .agreement{
+  margin-top: 15px;
+  font-size: 12px;
+  width: 350px;
+  color: grey;
+}
+.signup_body .signup_form .signup{
+  margin-top: 20px;
+  height: 38px;
+  width: 170px;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #006117;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(#6fad5a, #66a150, #60974C);
+}
+.signup_body .signup_form .signup:hover{
+  background: linear-gradient(#74b85e, #598B45);
+}
+
+/* Styles for footer */
+footer {
+  height: auto;
+  width: 100%;
+  background-color: #FFF;
+  min-width: 980px;
+  padding-bottom: 30px;
+}
+#footersubdiv {
+  height: auto;
+  width: 980px;
+  margin: auto;
+}
+#languagediv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+  padding: 8px 0 8px 0;
+  width: inherit;
+  margin-top: 43px;
+}
+.language {
+  font-size: 12px;
+  display: inline-block;
+  padding-right: 10px;
+}
+#currentlang {
+  color: #737373;
+}
+#morelang {
+  display: inline-block;
+  height: 19.5px;
+  width: 29px;
+  background-color: #f5f6f7;
+  border: 1px solid rgb(204, 208, 213);
+  position: relative;
+}
+#morelang:hover {
+  background-color: #EBEDF0;
+}
+footer #languagediv .fa {
+  color: #4b4f56;
+  font-size: 12px;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-5.5px, -5.5px);
+}
+
+#hrfinal {
+  width: 980px;
+  border: 0.5px solid #DDDFE2;
+  margin: auto;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+#extralinksdiv {
+  height: 57px;
+  width: inherit;
+}
+.extralinks {
+  font-size: 12px;
+  display: inline-block;
+  padding-right: 14px;
+}
+
+#copyrightdiv {
+  font-size: 11px;
+  color: #737373;
+  margin-top: 33px;
+}
+#copyrightfblink {
+  color: #737373;
+}
+#copyright {
+  float: left;
+}
+#disclaimer {
+  float: right;
+}
+footer #copyrightdiv .fa {
+  color: #0274b3;
+    font-size: 14px;
+}
+#pranavks {
+    color: #0274b3;
+}
